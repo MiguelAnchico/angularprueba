@@ -7,7 +7,7 @@ import { Tarea } from './models/tarea.model';
   styleUrls: ['./tarea-list.component.scss'],
 })
 export class TareaListComponent {
-  @Input() tareas!: Tarea[];
+  @Input() tasks!: Tarea[];
 
   toggleCompleto(tarea: Tarea) {
     tarea.completo = !tarea.completo;
