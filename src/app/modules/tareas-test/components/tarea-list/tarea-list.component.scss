@@ -1,0 +1,44 @@
+.title {
+  font-size: 24px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+  padding: 2rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+  }
+}
+
+.button {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+
+  background-color: #007bff;
+  font-weight: bold;
+  color: white;
+
+  text-decoration: none;
+  border-radius: 4px;
+
+  transition: all 250ms;
+
+  &--warning {
+    background-color: #ff4b5c;
+  }
+}

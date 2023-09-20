@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TareaListComponentComponent } from './tarea-list-component.component';
+import { TareaListComponent } from './tarea-list.component';
 
 describe('TareaListComponentComponent', () => {
-  let component: TareaListComponentComponent;
-  let fixture: ComponentFixture<TareaListComponentComponent>;
+  let component: TareaListComponent;
+  let fixture: ComponentFixture<TareaListComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TareaListComponentComponent]
+      declarations: [TareaListComponent],
     });
-    fixture = TestBed.createComponent(TareaListComponentComponent);
+    fixture = TestBed.createComponent(TareaListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,12 @@
+<h2 class="title">Lista de tareas</h2>
+<ul class="list">
+  <li class="list__item" *ngFor="let tarea of tareas; trackBy: trackByFn">
+    {{ tarea.descripcion }} - {{ tarea.completo ? "Completo" : "Incompleto" }}
+    <button
+      (click)="toggleCompleto(tarea)"
+      [ngClass]="tarea.completo ? 'button' : 'button button--warning'"
+    >
+      {{ tarea.completo ? "Completar" : "Cambiar a incompleta" }}
+    </button>
+  </li>
+</ul>

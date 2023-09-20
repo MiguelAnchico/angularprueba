@@ -1,0 +1,11 @@
+<form class="form" (ngSubmit)="agregarTarea()">
+  <label for="descripcion">Nueva tarea</label>
+  <input
+    class="form__input"
+    id="descripcion"
+    [(ngModel)]="nuevaTarea.descripcion"
+    name="descripcion"
+    required
+  />
+  <button class="button" type="submit">Agregar</button>
+</form>
