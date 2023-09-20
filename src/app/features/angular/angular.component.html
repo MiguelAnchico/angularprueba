@@ -1,0 +1,85 @@
+<section class="container m-16">
+  <h1 class="font-bold text-xl text-cyan-900">Angular</h1>
+  <code>
+    <br /><br />
+    <strong>1. Creación de Componentes</strong><br />
+    <div class="ml-4">
+      a. Crea un nuevo componente llamado <strong>saludo</strong>. Este
+      componente debe mostrar un mensaje de saludo en el navegador.<br />
+      b. Crea otro componente llamado <strong>contador</strong>. Este componente
+      debe mostrar un número y tener botones de "Incrementar" y "Decrementar"
+      que permitan modificar ese número.<br />
+    </div>
+    <br />
+    <a class="button" routerLink="/angular/1">Solucion primer punto</a>
+    <br /><br />
+    <strong>2. Directivas</strong><br />
+    <div class="ml-4">
+      a. Crea una directiva <strong>applyStyles</strong>. Este directiva debe
+      aplicar estilos de css a cualquier a un elemento de HTML<br />
+      b. Crea otra directiva llamado <strong>transformString</strong>. Esta
+      directiva debe aplicar la transformación de una cadena a mayúscula de un
+      elemento de HTML<br />
+    </div>
+    <br />
+    <a class="button" routerLink="/angular/2">Solucion segundo punto</a>
+    <br /><br />
+    <strong>3. Data Binding y Reactive Forms</strong><br />
+    <div class="ml-4">
+      a. Crea un formulario de entrada de texto en un componente. Utiliza el
+      enlace de datos de dos vías <strong>([(ngModel)])</strong> para mostrar el
+      valor del campo de entrada en tiempo real en un párrafo debajo del
+      campo.<br />
+      b. Crea un formulario que solo contenga usuario y correo y estos cumplan
+      con lo siguiente:<br />
+      - Ambos campos deben ser obligatorios<br />
+      - El usuario debe contener la palabra peakr <br />
+      - El correo debe cumplir el formato de email <br />
+      - El botón de guardar, debe deshabilitarse/habilitarse si cumple las 2
+      reglas<br />
+      <strong
+        >Nota: Los nombres de los componentes son a libertad propia</strong
+      >
+    </div>
+    <br />
+    <a class="button" routerLink="/angular/3">Solucion tercer punto</a>
+    <br /><br />
+    <strong>4. Inputs & Ouputs</strong><br />
+    <div class="ml-4">
+      Crea un componente llamado
+      <strong>TareaListComponent (Listado de Tareas)</strong> que mostrará una
+      lista de tareas.<br />
+      Define una propiedad <strong>task</strong> que será un arreglo de objetos
+      de tarea, donde cada objeto tendrá una descripción y un estado (completo o
+      no completo). <br />
+      a. Utiliza el decorador <strong>@Input</strong> para permitir que el
+      componente padre pase el arreglo de tareas al componente
+      TareaListComponent.<br />
+      b. Renderiza las tareas en una lista y muestra si cada tarea está completa
+      o no. Proporciona una forma de marcar una tarea como completa o
+      incompleta. (Puedes aplicar buenas prácticas como <strong>trackBy)</strong
+      ><br />
+      c. Crea otro componente llamado <strong>TareaFormComponent</strong> que
+      contendrá un formulario para agregar nuevas tareas. Define una propiedad
+      nuevaTarea y un método <strong>agregarTarea()</strong> para agregar tareas
+      a la lista.<br />
+      d. Utiliza el decorador <strong>@Output</strong> para emitir eventos
+      cuando se agrega una nueva tarea. El evento debe llevar consigo la nueva
+      tarea que se agregó.<br /><br />
+
+      Objetivo:<br />
+
+      - Cómo se comunican los componentes:
+      <strong>TareaFormComponent</strong> debe emitir un evento cuando se agrega
+      una nueva tarea.<br />
+      - El evento debe llevar la nueva tarea como datos.
+      <br />
+      - <strong>TareaListComponent</strong> debe recibir este evento y agregar
+      la nueva tarea al arreglo de tareas.<br />
+    </div>
+    <br /><br />
+    <strong>5. Rutas y Navegación</strong><br />
+    <div class="ml-4">Crear rutas independientes para cada ejercicio</div>
+    <br /><br />
+  </code>
+</section>

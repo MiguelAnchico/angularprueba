@@ -1,0 +1,191 @@
+<section class="container m-16">
+  <h1 class="font-bold text-xl text-cyan-900">CSS</h1>
+  <code>
+    <br />
+    FORMULARIOS <br />
+    En base al maquetado del formulario en HTML estilizalo usando CSS y sigue
+    las siguientes instrucciones: <br />
+    - Estiliza de manera libre <br />
+    - Considerar pseudoelementos y/o pseudoclases si es necesario <br />
+    - Cambia el color del radiobutton al tener estado checked <br />
+    - El formulario debe ser responsivo <br />
+    - El botón de Guardar debe cambiar de color al pasar el cursor sobre el
+    <br />
+    <br />
+    <br />
+    GRID y/o FLEXBOX <br />
+    - El diseño es de manera libre - Debe tener una imagen, título, descripción
+    y un enlace ver más. <br />
+    - Diseña una card que cumpla con el sistema FLEXBOX <br />
+    - Realiza un listado de cards y estan que se repitan de 4 en 4 ocupando todo
+    el ancho del viewport <br />
+  </code>
+  <br />
+  <button
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    (click)="navigateBEM()"
+  >
+    Avanzar a BEM-SCSS
+  </button>
+</section>
+
+<section>
+  <form action="" enctype="multipart/form-data" class="form">
+    <h2 class="form__title">Formulario</h2>
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">Información Personal</legend>
+      <div class="form__group">
+        <label for="nombres" class="form__label">Nombres</label>
+        <input
+          type="text"
+          id="nombres"
+          name="nombres"
+          placeholder="Nombres"
+          autocomplete="on"
+          class="form__input"
+          required
+        />
+      </div>
+      <div class="form__group">
+        <label for="apellidos" class="form__label">Apellidos</label>
+        <input
+          type="text"
+          id="apellidos"
+          name="apellidos"
+          placeholder="Apellidos"
+          autocomplete="on"
+          class="form__input"
+          required
+        />
+      </div>
+    </fieldset>
+
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">Información Demográfica</legend>
+      <div class="form__group">
+        <label for="edad" class="form__label">Edad</label>
+        <input
+          type="number"
+          id="edad"
+          name="edad"
+          placeholder="Edad"
+          class="form__input"
+          min="1"
+          required
+        />
+      </div>
+      <fieldset class="form__fieldset form__fieldset--multiselect">
+        <legend class="form__legend form__legend--small">Sexo</legend>
+        <div class="form__group form__group--radio">
+          <label for="masculino" class="form__label">Masculino</label>
+          <input
+            type="radio"
+            id="masculino"
+            name="sexo"
+            class="form__radio"
+            required
+          />
+        </div>
+        <div class="form__group form__group--radio">
+          <label for="femenino" class="form__label">Femenino</label>
+          <input
+            type="radio"
+            id="femenino"
+            name="sexo"
+            class="form__radio"
+            required
+          />
+        </div>
+      </fieldset>
+    </fieldset>
+
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">
+        Información de Contacto y Complementaria
+      </legend>
+      <div class="form__group">
+        <label for="correo" class="form__label">Correo</label>
+        <input
+          type="email"
+          autocomplete="email"
+          id="correo"
+          name="correo"
+          placeholder="Correo"
+          class="form__input"
+          required
+        />
+      </div>
+      <div class="form__group">
+        <label for="imagen" class="form__label">
+          Selecciona una imagen como foto de perfil (JPG, PNG)
+        </label>
+        <input
+          type="file"
+          id="imagen"
+          name="imagen"
+          accept=".jpg, .jpeg, .png"
+          class="form__input form__input--file"
+          required
+        />
+      </div>
+    </fieldset>
+    <button type="submit" class="button">Enviar</button>
+  </form>
+</section>
+
+<section class="card-list">
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      alt="Imagen Descriptiva"
+      class="card__image"
+    />
+    <h2 class="card__title">Alicante</h2>
+    <p class="card__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium
+      ultricies eros sed vehicula.
+    </p>
+    <a href="/css" class="button">Ver más</a>
+  </article>
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      alt="Imagen Descriptiva"
+      class="card__image"
+    />
+    <h2 class="card__title">Casa bonita</h2>
+    <p class="card__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium
+      ultricies eros sed vehicula.
+    </p>
+    <a href="/css" class="button">Ver más</a>
+  </article>
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1513880989635-6eb491ce7f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+      alt="Imagen Descriptiva"
+      class="card__image"
+    />
+    <h2 class="card__title">Barrio caro</h2>
+    <p class="card__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium
+      ultricies eros sed vehicula.
+    </p>
+    <a href="/css" class="button">Ver más</a>
+  </article>
+  <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      alt="Imagen Descriptiva"
+      class="card__image"
+    />
+    <h2 class="card__title">Ojala vivir aqui</h2>
+    <p class="card__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium
+      ultricies eros sed vehicula.
+    </p>
+    <a href="/css" class="button">Ver más</a>
+  </article>
+</section>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,25 @@
+.ordered-list {
+  list-style-type: decimal;
+
+  &__item {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+
+    &--input {
+      .ordered-list__input {
+        border-radius: 8px;
+        padding: 12px;
+        border: 1px solid rgb(150, 150, 150);
+      }
+    }
+
+    &--danger {
+      background-color: #ff4b5c;
+    }
+  }
+
+  &__input {
+    border: 1px solid #ccc;
+  }
+}

@@ -1,0 +1,80 @@
+<section class="container m-16">
+  <h1 class="font-bold text-xl text-cyan-900">Javascript</h1>
+  <code>
+    <br />
+    Desarrolla los siguientes ejercicios en Javascript.
+    <br />
+    <br />
+    1. Crea una función <strong>saludar()</strong> la cual reciba como argumento
+    la variable <strong>name</strong> y lo muestre como en un alerta, este debe
+    ser invocado aquí, realiza las validaciones correspondientes como si es nulo
+    y si es un string
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      type="button"
+      (click)="saludar('Raul')"
+    >
+      Saludar</button
+    ><br /><br />
+    2. Crea una función <strong>esPar()</strong> que reciba como parametro el
+    arreglo <strong>[20,50,10,52,14,21,12,3,4,1,2,3,2]</strong> y me muestre en
+    una alerta, los números pares, considerar validaciones.
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      type="button"
+      (click)="esPar([20, 50, 10, 52, 14, 21, 12, 3, 4, 1, 2, 3, 2])"
+    >
+      Es Par</button
+    ><br /><br />
+
+    3. Crea una función llamada <strong>hacerAlgo()</strong> que tome una
+    función callback como argumento y llame a esa función después de un cierto
+    período de tiempo (por ejemplo, 3 segundos). El resultado mostrarlo en
+    consola y considerar validaciones si es necesario
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      type="button"
+      (click)="hacerAlgo(hacerAlgoCallback)"
+    >
+      Hacer Algo
+    </button>
+    <br /><br />
+
+    4. Crea una función <strong>transformar()</strong> que reciba como parametro
+    un array de 5 números, y estos deben ser multiplicados x5 en cada iteración,
+    Se debe mostrar en consola el array original y el array transformado.
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      type="button"
+      (click)="transformar([2, 5, 1, 6, 9])"
+    >
+      Transformar
+    </button>
+    <br /><br />
+
+    5. Usando fetch haz una petición al api de
+    <strong>https://jsonplaceholder.typicode.com/todos/#id</strong> para
+    mostrarme el resultado del post a petición del cliente, este debe activarse
+    cuando de clic al botón <strong>Obtener Post</strong> y muestrame la
+    información por consola
+  </code>
+  <button
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    type="button"
+    (click)="obtenerPost(14)"
+  >
+    Obtener Post
+  </button>
+  <br /><br />
+  6. Utiliza <strong>setInterval</strong> para programar una función que se
+  ejecute cada segundo e imprima un mensaje en la consola. Luego, utiliza
+  <strong>clearInterval</strong> para detener la ejecución de la función después
+  de 5 segundos.
+  <button
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    type="button"
+    (click)="funcionProgramada()"
+  >
+    Ejecutar Interval
+  </button>
+</section>

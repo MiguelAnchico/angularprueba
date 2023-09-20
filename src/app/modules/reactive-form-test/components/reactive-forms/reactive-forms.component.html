@@ -1,0 +1,11 @@
+<form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label class="form__label">
+    Usuario:
+    <input class="form__input" formControlName="username" />
+  </label>
+  <label class="form__label">
+    Correo:
+    <input class="form__input" type="email" formControlName="email" />
+  </label>
+  <button type="submit" class="button" [disabled]="!form.valid">Guardar</button>
+</form>
